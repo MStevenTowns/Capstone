@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/CommonName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_scroll"
+            android:paddingStart="8dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ScientificName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CommonName"
+            android:baselineAligned="false"
+            android:paddingStart="8dp"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="?attr/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:scrollHorizontally="true" />
+
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ScientificName"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:id="@+id/EoLLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Description"
+            android:padding="8dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:linksClickable="true"/>
+    </RelativeLayout>
+</ScrollView>

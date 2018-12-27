@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cameraButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalRecordingsActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/plus_sign" />
+
+    <GridView
+        android:id="@+id/FileList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+
+</RelativeLayout>
